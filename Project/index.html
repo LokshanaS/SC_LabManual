@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+  <h1>🌦 Weather App</h1>
+
+  <div class="search-box">
+    <input type="text" id="city" placeholder="Enter city name">
+    <button onclick="getWeather()">Search</button>
+    <button onclick="getLocationWeather()">📍</button>
+  </div>
+
+  <div id="weatherCard" class="card hidden"></div>
+
+  <div class="chart-container">
+    <canvas id="forecastChart"></canvas>
+  </div>
+
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
